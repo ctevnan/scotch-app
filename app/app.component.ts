@@ -30,9 +30,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   message = 'Hello';
-  user = {
-    id: 29,
-    name: 'Carolyn',
-    username: 'ctevs'
+  users = [
+    { id: 29, name: 'Carolyn', username: 'ctevs'
   }
 }
