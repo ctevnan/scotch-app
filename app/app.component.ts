@@ -15,7 +15,9 @@ import { Component } from '@angular/core';
       <h1>Welcome to our app</h1>
     </div>
 
-    footer
+    <footer>
+      Copyright &copy; 2016
+    </footer>
   `,
   styles: [`
     .jumbotron { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
