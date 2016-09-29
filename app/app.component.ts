@@ -13,9 +13,10 @@ import { Component } from '@angular/core';
 
     <div class="jumbotron">
       <h1>Welcome to our app</h1>
+      <p>{{ message }}</p>
     </div>
 
-    <footer>
+    <footer class="text-center">
       Copyright &copy; 2016
     </footer>
   `,
@@ -23,4 +24,6 @@ import { Component } from '@angular/core';
     .jumbotron { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
   `]  
 })
-export class AppComponent {}
+export class AppComponent {
+  message = 'Hello';
+}
