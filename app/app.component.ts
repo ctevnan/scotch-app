@@ -11,10 +11,14 @@ import { Component } from '@angular/core';
       </nav>
     </header>
 
-    <div class="jumbotron">
-      <h1>Welcome to our app</h1>
-      <p>{{ message }}</p>
-    </div>
+    <main>
+      <div class="jumbotron">
+        <h1>Welcome to our app</h1>
+        <p>{{ message }}</p>
+      </div>
+
+      <p>The user is {{ user.main }} ({{ user.username}}).</p>
+    </main>
 
     <footer class="text-center">
       Copyright &copy; 2016
@@ -26,4 +30,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   message = 'Hello';
+  user = {
+    id: 29,
+    name: 'Carolyn',
+    username: 'ctevs'
+  }
 }
