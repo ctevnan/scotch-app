@@ -17,7 +17,9 @@ import { Component } from '@angular/core';
         <p>{{ message }}</p>
       </div>
 
-      <p>The user is {{ user.main }} ({{ user.username}}).</p>
+      <div *ngFor="let user of users">
+        {{ user.name }} ({{ user.username }})
+      </div>
     </main>
 
     <footer class="text-center">
@@ -31,6 +33,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   message = 'Hello';
   users = [
-    { id: 29, name: 'Carolyn', username: 'ctevs'
-  }
+    { id: 29, name: 'Carolyn', username: 'ctevs' },
+    { id: 30, name: 'Declan' username: 'cmdironb'},
+    { id: 31, name: 'George' username: 'bosssauce'}
+  ];
 }
